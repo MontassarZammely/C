@@ -1,0 +1,28 @@
+
+
+<div class="bg">
+    <div class="login">
+        <div action="" class="login__form">
+            <img class="logo-img" src="assets/img/logoV2.png">
+
+
+            <div class="login__inputs">
+                <div class="login__box">
+                    <input [(ngModel)]="email"  type="email" placeholder="votre email" required class="login__input">
+                    <i class="ri-mail-fill"></i>
+                </div>
+
+                <div class="login__box">
+                    <input [(ngModel)]="password" type="password"  placeholder=" votre Password" required class="login__input">
+                    <i class="ri-lock-2-fill"></i>
+                </div>
+            </div>
+
+            <button type="submit" class="login__button" (click)="login()">Login</button>
+
+            <div class="login__register">
+                Don't have an account? <a href="#">Register</a>
+            </div>
+        </div>
+    </div>
+</div>
